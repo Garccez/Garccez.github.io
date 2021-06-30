@@ -1,1 +1,22 @@
+@import url("https://discordstyles.github.io/FrostedGlass/base.css");
 
+/* Radial Status */
+@import url("https://discordstyles.github.io/RadialStatus/base.css");
+
+/* HorizontalServerList (HSL) */
+@import url("https://discordstyles.github.io/HorizontalServerList/base.css");
+
+/* BlackBox tags */
+@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
+
+/* Old Windows titlebar - remove this @import if you wish to use default titlebar */
+@import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
+
+/* Font Space Grotesk 400 & 700 */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+/* Blurple Recolor */
+@import url('https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/BlurpleRecolor/BlurpleRecolor.css');
+
+/* Emoji Replace */
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/JoyPixels.css');
