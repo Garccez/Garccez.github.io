@@ -23,3 +23,16 @@
 
 /* TypingAtTopOfChatBox */
 @import url('https://tomrdh.github.io/discord-addons/xcores/themes/TATOCB_Core.css');
+
+#app-mount .guilds-1SWlCJ .tutorialContainer-2sGCg9 .wrapper-1BJsBx:before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  background: url("https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg");
+  background-size: var(--home-button-size, cover);
+  background-position: var(--home-button-position, center);
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
