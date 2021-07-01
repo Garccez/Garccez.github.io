@@ -28,7 +28,7 @@
   content: "";
   border-radius: 50%;
   position: absolute;
-  background: url("https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg");
+  background: url("https://raw.githubusercontent.com/CaffeJappa/frosted-stellaris/main/img/Paradox%20Branco.svg");
   background-size: var(--home-button-size, cover);
   background-position: var(--home-button-position, center);
   height: 100%;
