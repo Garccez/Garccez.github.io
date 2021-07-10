@@ -25,6 +25,10 @@
 /* TypingAtTopOfChatBox */
 @import url('https://tomrdh.github.io/discord-addons/xcores/themes/TATOCB_Core.css');
 
+:root {
+  --separator-visibility: visible;
+}
+
 #app-mount .guilds-1SWlCJ .tutorialContainer-2sGCg9 .wrapper-1BJsBx:before {
   content: "";
   border-radius: 50%;
