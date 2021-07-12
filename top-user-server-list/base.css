@@ -9,7 +9,7 @@
   --separator-visibility: hidden;
 }
 
-/* Original Name-Panel by LeePrky, Modded Name-Panel by Garcez */
+/* Original Name-Panel by LeePrky, Modded Name-Panel by Garcez|Belotto */
 .clearStatusIcon-3-MDNF,.scrollerBase-289Jih > [id*="status-picker-"] + .separator-2I32lJ,.statusItem-33LqPf > .status-1fhblQ,.statusItem-33LqPf > .description-2L932D,.statusItem-33LqPf > .separator-2I32lJ,.statusItem-33LqPf > .customText-tY5LJn,.statusItem-33LqPf > .clearStatusIcon-3-MDNF,.tutorialContainer-SGrQ1h + div{display:none}
 .panels-j1Uci_ > .container-3baos1 > .avatarWrapper-2yR4wp,.usernameContainer-1fp4nu,.hoverRoll-YK53gQ{position:fixed;z-index:5;top:3px;left:8px}
 .container-3baos1{margin-bottom:-55px}
@@ -58,7 +58,7 @@
   position: fixed;
   z-index: 10;
   top: 6px;
-  left: 140px;
+  left: 135px;
   width: 100px;
   max-height: 50px;
   min-height: 50px;
