@@ -25,6 +25,9 @@
 /* TypingAtTopOfChatBox */
 @import url('https://tomrdh.github.io/discord-addons/xcores/themes/TATOCB_Core.css');
 
+/* SettingsIcons */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
+
 :root {
   --separator-visibility: visible;
 }
