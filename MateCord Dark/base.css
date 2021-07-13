@@ -480,6 +480,11 @@ body, button, select {
     left: 138px;
     background-color: rgb(13, 13, 14);
     border-radius: 22px;
+    top: 26px;
+}
+
+.panels-j1Uci_ > .container-3baos1 > .avatarWrapper-2yR4wp, .usernameContainer-1fp4nu, .hoverRoll-YK53gQ {
+    top: 19px;
 }
 
 .bd-controls>.bd-addon-button:first-of-type {
