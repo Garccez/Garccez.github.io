@@ -20,10 +20,10 @@
     /* BlurpleRecolor */
     --accentcolor: 135, 165, 86;
     --accentcolor2: 255,115,250;
-	  --linkcolor: 93, 128, 37;
+    --linkcolor: 93, 128, 37;
 
     /* Theme Base */
-    --version: 'MateCord Dark 1.0.1';
+    --version: 'MateCord Dark 1.0.2';
     --background-primary: rgb(10, 10, 10);
     --background-secondary: rgb(0, 0, 0); 
     --background-floating: rgb(9, 10, 10);
