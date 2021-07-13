@@ -1,0 +1,476 @@
+/* Addons Imports */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css"); 
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700|Nunito:700);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/JoyPixels.css);
+@import url("https://caffejappa.github.io/top-user-server-list/base.css");
+
+:root {
+    /* Font */
+    --font-display: var(--general-font, 'Ubuntu');
+    --font-primary: var(--general-font, 'Ubuntu');
+  
+    /* TUSL */
+    --separator-visibility: visible; /* DEFAULT: hidden; */
+
+    /* BlurpleRecolor */
+    --accentcolor: 135, 165, 86;
+    --accentcolor2: 255,115,250;
+	  --linkcolor: 93, 128, 37;
+
+    /* Theme Base */
+    --version: 'MateCord Dark 1.0.0';
+    --background-primary: rgb(10, 10, 10);
+    --background-secondary: rgb(0, 0, 0); 
+    --background-floating: rgb(9, 10, 10);
+    --background-secondary-alt: var(--background-floating);
+    --background-tertiary: rgb(20, 20, 20);
+    --background-accent: rgb(9, 10, 11);
+    --userarea-background: var(--background-tertiary);
+    --header-primary: rgb(240, 246, 252);
+    --header-secondary: rgb(139, 148, 158);
+    --elevation-low: 0 1px 0 rgba(40, 40, 50, 0.2), 0 1.5px 0 rgba(60, 60, 70, 0.05), 0 2px 0 rgba(40, 40, 50, 0.05);
+    --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
+    --channels-default: rgb(139, 148, 158);
+    --channeltextarea-background: var(--background-tertiary);
+    --voice-color: var(--brand-experiment);
+    --guild-header-text-shadow: 0 1px 1px rgba(var(--background-floating),.5);
+    --activity-card-background: rgb(var(--background-tertiary));
+    --deprecated-panel-background: rgb(17, 17, 17);
+    --deprecated-card-bg: var(--background-secondary);
+    --deprecated-card-editable-bg: var(--background-secondary);
+    --deprecated-store-bg: rgb(17, 17, 17);;
+    --deprecated-quickswitcher-input-background: rgb(17, 17, 17);
+    --deprecated-quickswitcher-input-placeholder: rgb(17, 17, 17);
+    --deprecated-text-input-bg: var(--channeltextarea-background);
+    --deprecated-text-input-prefix: #dcddde;
+    --deprecated-quickswitcher-input-background: var(--channeltextarea-background);
+    --textbrightest: 				255,255,255;
+	  --textbrighter: 				220,221,222;
+	  --textbright: 					185,187,190;
+	  --textdark: 					142,146,151;
+	  --textdarker: 					114,118,125;
+	  --textdarkest: 					79,84,92;
+    --text-normal: rgb(var(--textbrighter));
+	  --text-muted: rgb(var(--textdarker));
+    --interactive-normal: rgb(var(--textbright));
+	  --interactive-hover: rgb(var(--textbrighter));
+	  --interactive-active: rgb(var(--textbrightest));
+	  --interactive-muted: rgb(var(--textdarkest));
+}
+
+#app-mount .guilds-1SWlCJ .tutorialContainer-2sGCg9 .childWrapper-anI2G9 {
+    background-color: #87A556;
+}
+
+.contents-18-Yxp {
+    color: white;
+}
+
+.circleIconButton-1QV--U {
+    color: white;
+    background-color: rgb(59, 71, 39);
+}
+.circleIconButton-1QV--U.selected-1JjBPm {
+    color: rgb(59, 71, 39);
+    background-color: white;
+}
+
+.DraftEditor-editorContainer {
+	background-color: transparent;
+	border-left: .1px solid transparent;
+}
+.public-DraftEditorPlaceholder-root {
+	color: var(--channels-default);
+}
+.public-DraftEditorPlaceholder-hasFocus {
+	color: var(--header-secondary);
+}
+#app-mount .searchAnswer-3Dz2-q,
+#app-mount .searchFilter-2ESiM3 {
+	background-color: var(--background-primary);
+	color: var(--header-primary);
+}
+
+#app-mount .container-3ayLPN {
+	background-color: var(--background-primary);
+}
+#app-mount .queryContainer-RKFJW- {
+	border-bottom-color: rgba(var(--background-tertiary),.3);
+	color: var(--header-secondary);
+}
+#app-mount .queryContainer-RKFJW- strong {
+	color: var(--header-primary);
+}
+#app-mount .focused-2bY0OD {
+	background-color: var(--background-tertiary);
+}
+#app-mount .resultsGroup-r_nuzN::before {
+	border-top: 1px solid rgba(var(--background-tertiary),.3);
+}
+#app-mount .resultsGroup-r_nuzN .header-2N-gMV,
+#app-mount .resultsGroup-r_nuzN .plusIcon-v0BTrL,
+#app-mount .resultsGroup-r_nuzN .searchClearHistory-2cSSMO,
+#app-mount .resultsGroup-r_nuzN .searchLearnMore-3SQUAj a {
+	color: var(--text-normal);
+}
+#app-mount .option-96V44q::after {
+	background: linear-gradient(90deg, transparent,var(--background-primary) 80%);
+}
+#app-mount .option-96V44q.selected-rZcOL- {
+	background-color: var(--background-tertiary);
+}
+#app-mount .option-96V44q.selected-rZcOL-::after {
+	background: linear-gradient(90deg, transparent, var(--background-tertiary) 50%);
+}
+#app-mount .option-96V44q .answer-1n6g43,
+#app-mount .option-96V44q .nonText-3CRkO0,
+#app-mount .option-96V44q strong {
+	color: var(--text-normal);
+}
+#app-mount .option-96V44q .filter-3Y_im- {
+	color: var(--text-muted);
+}
+#app-mount .option-96V44q.user-O3Czj0 .displayedNick-3xxvzU {
+	color: var(--text-normal);
+}
+#app-mount .option-96V44q.user-O3Czj0 .displayUsername-Qekxml {
+	color: var(--interactive-muted);
+}
+#app-mount .searchOption-zQ-1l6 .filter-3Y_im- {
+	color: var(--text-normal);
+}
+#app-mount .searchOption-zQ-1l6 .answer-1n6g43 {
+	color: var(--text-muted);
+}
+#app-mount .datePicker--XZbmJ .datePickerHint-3Q1Udw {
+	border-top: 1px solid rgba(var(--background-tertiary),.3);
+}
+#app-mount .datePicker--XZbmJ .datePickerHint-3Q1Udw .hint-165cR4 {
+	color: var(--text-normal);
+}
+#app-mount .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z {
+	color: var(--header-primary);
+}
+#app-mount .searchResultChannelCategory-1l0lSn,
+#app-mount .searchResultChannelIcon-1DnTme {
+	color: var(--text-muted);
+}
+
+#app-mount .calendarPicker-2yf6Ci .react-datepicker {
+	background-color: var(--background-primary);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__header {
+	background-color: var(--background-primary);
+	border-color: rgba(var(--background-floating),.2);
+}
+#app-mount .datePicker--XZbmJ .react-datepicker__navigation {
+	background: transparent;
+	border-color: rgba(var(--textbrightest), .5);
+	top: 30px;
+}
+#app-mount .datePicker--XZbmJ .react-datepicker__navigation::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-mask: url(https://discord.com/assets/7619529e87dad31fd2ae83d9b9583e49.svg) center/6px 12px no-repeat;
+	background-color: rgb(var(--textbrightest));
+}
+#app-mount .datePicker--XZbmJ .react-datepicker__navigation--previous {
+	left: 30px;
+}
+#app-mount .datePicker--XZbmJ .react-datepicker__navigation--next {
+	right: 30px;
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__current-month {
+	border-bottom-color: rgba(var(--background-floating),.3);
+	color: var(--header-primary);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next,
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous {
+	-webkit-mask: url(https://discord.com/assets/7619529e87dad31fd2ae83d9b9583e49.svg) 50%/6px 12px no-repeat;
+	background: var(--interactive-normal);
+	border-color: var(--background-floating);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next:hover,
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous:hover {
+	background: var(--interactive-hover);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next:active,
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous:active {
+	background: var(--interactive-active);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day {
+	border-bottom-color: var(--background-floating);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__week .react-datepicker__day:last-of-type {
+	border-right-color: var(--background-floating);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__day-name {
+	color: rgba(var(--textbrightest),.6);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__day {
+	border-top-color: var(--background-floating);
+	border-left-color: var(--background-floating);
+	color: var(--header-primary);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover,
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__day:hover {
+	color: var(--header-primary);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled,
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover {
+	background-color: var(--background-secondary);
+	color: rgba(var(--textbrightest),.3);
+}
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__day--disabled,
+#app-mount .calendarPicker-2yf6Ci .react-datepicker__day--outside-month {
+	background-color: var(--background-secondary);
+	color: rgba(var(--textbrightest),.3);
+}
+
+.sidebar-2K8pFh, .content-1x5b-n {
+    border-radius: 12px;
+}
+
+.wrapper-24pKcD {
+    background-color: rgb(9, 10, 11);
+    padding: 8px;
+}
+.container-1giJp5 {
+    background-color: rgb(13, 13, 14);
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.side-8zPYf6 .item-PXvHYJ, .container-CpszHS, .accountBtnInner-sj5jLs {
+    border-radius: 12px;
+}
+
+.menu-3sdvDG {
+    background-color: var(--background-secondary);
+}
+
+#app-mount .guilds-1SWlCJ .tutorialContainer-2sGCg9 .wrapper-1BJsBx:before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/0/07/Ubuntu_MATE_rondel_logo.svg");
+    background-size: var(--home-back-size, cover);
+    background-position: var(--home-back-position, center);
+    height: 100%;
+    width: 100%;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+#app-mount .info-1VyQPT .colorMuted-HdFt4q:first-child:before {
+  content: var(--version);
+  display: block;
+}
+
+body, button, select {
+	font-family: var(--general-font, 'Ubuntu');
+}
+
+.nameAndDecorators-5FJ2dg, .wrapper-3WhCwL {
+  font-family: 'Nunito';
+}
+
+#app-mount .userList-1kLH8B::before {
+	background-color: var(--background-secondary);
+}
+
+#app-mount .header-2B7Ri8 {
+	background-color: var(--background-tertiary);
+	color: var(--header-primary);
+}
+
+#app-mount .content-2KAjC9 {
+	background-color: var(--background-secondary);
+}
+
+#app-mount .username-2lEtrk {
+	color: var(--text-normal);
+}
+
+#app-mount .discriminator-1fGEDN {
+	color: var(--text-muted);
+}
+
+.resultsGroup-r_nuzN {
+    background-color: var(--background-secondary);
+}
+
+.lookBlank-3eh9lL {
+    color: var(--text-normal);
+}
+
+.footer-2gL1pp .lookFilled-1Gx00P.colorGrey-2DXtkV {
+    background-color: rgb(43, 50, 59) !important;
+}
+
+.emptyHintCard-2mUdMe {
+    background-color: var(--background-secondary-alt);
+}
+
+.contentWrapper-3WC1ID {
+    background-color: var(--background-secondary);
+}
+
+.children-19S4PO:after {
+    content: none
+}
+
+.outer-1AjyKL.interactive-3B9GmY:hover, .outer-1AjyKL.active-1xchHY {
+    background-color: var(--background-modifier-selected);
+}
+
+.lookFilled-1Gx00P.colorGrey-2DXtkV {
+    background-color: var(--background-floating);
+}
+
+.lookFilled-1Gx00P.colorGrey-2DXtkV:hover {
+    background-color: var(--background-modifier-selected);
+}
+
+.container-1D34oG {
+    background-color: var(--background-primary);
+}
+
+.item-26Dhrx[aria-checked=true] {
+    background-color: var(--background-modifier-selected);
+}
+
+.phoneField-38N1bJ, .phoneField-38N1bJ .inputField-aNPXsv {
+    background-color: var(--channeltextarea-background);
+}
+
+.option-n0icdO, .notDetected-33MY4s {
+    background-color: var(--background-floating);
+}
+
+.container-1r6BKw.themed-ANHk51 {
+    background-color: var(--background-secondary);
+}
+
+.userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+    background-color: var(--background-secondary);
+}
+
+.root-1gCeng, .popoutList-T9CKZQ {
+    background-color: var(--background-secondary);
+}
+
+.friendSelected-1sa4bG {
+    background: var(--background-modifier-hover);
+}
+
+.selectableItem-1MP3MQ:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.footer-2gL1pp {
+    background-color: var(--background-floating);
+}
+
+.container-1nZlH6 {
+    background-color: var(--channeltextarea-background);
+}
+
+.codeRedemptionRedirect-1wVR4b {
+    background-color: var(--background-secondary);
+}
+
+.searchHeader-2XoQg7 {
+    background-color: rgb(9, 10, 11);
+}
+
+.headerExpanded-CUEwZ5, .checklistHeader-1KWcEY, .header-2Y0-A- {
+    background-color: rgb(9, 10, 11);
+}
+
+.container-3baos1, .changeDetails-bk98pu, .tierBody-16Chc9, .headerClickable-2IVFo9, .headerDefault-1wrJcN {
+    background-color: var(--background-secondary);
+}
+
+.bf-toolbar::before {
+    background-color: var(--background-secondary) !important;
+}
+
+.option-3KoAJB[aria-selected=true] {
+    background-color: var(--background-modifier-selected);
+}
+
+.cardWrapper-2Min21, .cardPrimaryOutline-29Ujqw, .tierHeaderUnlocked-3lTDnP, .tierBody-3aUxuc, .pageWrapper-1PgVDX {
+    background-color: var(--background-secondary);
+}
+
+.container-cMG81i, .copyInput-2rOSt7, .searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO {
+    background-color: var(--channeltextarea-background);
+}
+
+.iconWrapper-3LVgIo {
+    background-color: var(--background-secondary-alt);
+}
+
+.tierHeaderLocked-3S508x, .footer-3mqk7D {
+    background-color: var(--background-secondary-alt);
+}
+
+.root-1gCeng, .uploadModal-2ifh8j {
+    background-color: var(--background-secondary);
+}
+
+.perksModal-fSYqOq {
+    background-color: var(--background-primary);
+}
+
+.css-gvi9bl-control, .css-gvi9bl-control:hover, .css-6fzn47-control:hover, .css-6fzn47-control, .css-17e1tep-control:hover, .css-17e1tep-control {
+    background-color: var(--background-secondary);
+}
+
+.css-3vaxre-menu {
+    background-color: var(--background-secondary);
+}
+
+.addGamePopout-2RY8Ju {
+    background-color: var(--background-floating);
+}
+
+.default-3oAQTF {
+    background-color: var(--background-secondary);
+}
+
+.header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa {
+    color: var(--header-primary);
+}
+
+.navButtonActive-1MkytQ {
+    color: var(--header-primary);
+}
+
+.autocomplete-1vrmpx {
+    background-color: var(--background-secondary) !important;
+}
+
+.header-ykumBX {
+    background-color: var(--background-floating);
+}
+
+.selected-1Tbx07 {
+    background-color: var(--background-modifier-selected) !important;
+}
+
+.tabBody-3YRQ8W {
+    background-color: var(--background-primary);
+}
+
+.container-3baos1 .flex-1xMQg5 {
+    left: 138px;
+    background-color: rgb(13, 13, 14);
+    border-radius: 22px;
+}
