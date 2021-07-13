@@ -6,6 +6,10 @@
 @import url("https://caffejappa.github.io/top-user-server-list/base.css");
 
 :root {
+    /* Configs */
+    --disw-1: 6px;
+    --disw-2: 3px;;
+
     /* Font */
     --font-display: var(--general-font, 'Ubuntu');
     --font-primary: var(--general-font, 'Ubuntu');
@@ -480,11 +484,11 @@ body, button, select {
     left: 138px;
     background-color: rgb(13, 13, 14);
     border-radius: 22px;
-    top: 26px;
+    top: var(--disw-1);
 }
 
 .panels-j1Uci_ > .container-3baos1 > .avatarWrapper-2yR4wp, .usernameContainer-1fp4nu, .hoverRoll-YK53gQ {
-    top: 19px;
+    top: var(--disw-2);
 }
 
 .bd-controls>.bd-addon-button:first-of-type {
