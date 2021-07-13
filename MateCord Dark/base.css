@@ -39,28 +39,35 @@
     --deprecated-panel-background: rgb(17, 17, 17);
     --deprecated-card-bg: var(--background-secondary);
     --deprecated-card-editable-bg: var(--background-secondary);
-    --deprecated-store-bg: rgb(17, 17, 17);;
+    --deprecated-store-bg: rgb(17, 17, 17);
     --deprecated-quickswitcher-input-background: rgb(17, 17, 17);
     --deprecated-quickswitcher-input-placeholder: rgb(17, 17, 17);
     --deprecated-text-input-bg: var(--channeltextarea-background);
     --deprecated-text-input-prefix: #dcddde;
     --deprecated-quickswitcher-input-background: var(--channeltextarea-background);
     --textbrightest: 				255,255,255;
-	  --textbrighter: 				220,221,222;
-	  --textbright: 					185,187,190;
-	  --textdark: 					142,146,151;
-	  --textdarker: 					114,118,125;
-	  --textdarkest: 					79,84,92;
+    --textbrighter: 				220,221,222;
+    --textbright: 					185,187,190;
+    --textdark: 					142,146,151;
+    --textdarker: 					114,118,125;
+    --textdarkest: 					79,84,92;
     --text-normal: rgb(var(--textbrighter));
-	  --text-muted: rgb(var(--textdarker));
+    --text-muted: rgb(var(--textdarker));
     --interactive-normal: rgb(var(--textbright));
-	  --interactive-hover: rgb(var(--textbrighter));
-	  --interactive-active: rgb(var(--textbrightest));
-	  --interactive-muted: rgb(var(--textdarkest));
+    --interactive-hover: rgb(var(--textbrighter));
+    --interactive-active: rgb(var(--textbrightest));
+    --interactive-muted: rgb(var(--textdarkest));
 }
 
 #app-mount .guilds-1SWlCJ .tutorialContainer-2sGCg9 .childWrapper-anI2G9 {
     background-color: #87A556;
+}
+
+.enabled-2cQ-u7 {
+    border-radius: 12px;
+}
+.button-1YfofB {
+    border-radius: 12px;
 }
 
 .contents-18-Yxp {
