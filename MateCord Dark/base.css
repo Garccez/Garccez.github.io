@@ -8,7 +8,7 @@
 :root {
     /* Configs */
     --disw-1: 6px;
-    --disw-2: 3px;;
+    --disw-2: 3px;
 
     /* Font */
     --font-display: var(--general-font, 'Ubuntu');
