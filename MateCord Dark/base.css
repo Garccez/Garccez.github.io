@@ -474,3 +474,11 @@ body, button, select {
     background-color: rgb(13, 13, 14);
     border-radius: 22px;
 }
+
+.bd-controls>.bd-addon-button:first-of-type {
+    border-radius: 12px 0 0 12px;
+}
+
+.bd-controls>.bd-addon-button:last-of-type {
+    border-radius: 0px 12px 12px 0px;
+}
