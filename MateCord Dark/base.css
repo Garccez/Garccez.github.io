@@ -62,7 +62,7 @@
     --interactive-hover: rgb(var(--textbrighter));
     --interactive-active: rgb(var(--textbrightest));
     --interactive-muted: rgb(var(--textdarkest));
-    --ugreen: rgb(135, 165, 86);
+    --ugreen: 135, 165, 86;
 }
 
 #app-mount .guilds-1SWlCJ .tutorialContainer-2sGCg9 .childWrapper-anI2G9 {
