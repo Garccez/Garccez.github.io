@@ -23,7 +23,8 @@
     --linkcolor: 93, 128, 37;
 
     /* Theme Base */
-    --version: 'MateCord Dark 1.0.2';
+    --logo-image: url('https://caffejappa.github.io/MateCord%20Dark/assets/matecord.png')
+    --version: 'MateCord Dark 1.0.5';
     --background-primary: rgb(10, 10, 10);
     --background-secondary: rgb(0, 0, 0); 
     --background-floating: rgb(9, 10, 10);
@@ -61,10 +62,11 @@
     --interactive-hover: rgb(var(--textbrighter));
     --interactive-active: rgb(var(--textbrightest));
     --interactive-muted: rgb(var(--textdarkest));
+    --ugreen: rgb(135, 165, 86);
 }
 
 #app-mount .guilds-1SWlCJ .tutorialContainer-2sGCg9 .childWrapper-anI2G9 {
-    background-color: #87A556;
+    background-color: --ugreen;
 }
 
 .enabled-2cQ-u7 {
@@ -269,9 +271,9 @@
     content: "";
     border-radius: 50%;
     position: absolute;
-    background: url("https://upload.wikimedia.org/wikipedia/commons/0/07/Ubuntu_MATE_rondel_logo.svg");
-    background-size: var(--home-back-size, cover);
-    background-position: var(--home-back-position, center);
+    background: var(--logo-image, url("https://caffejappa.github.io/MateCord%20Dark/assets/matecord.png"));
+    background-size: var(--logo-back-size, cover);
+    background-position: var(--logo-back-position, center);
     height: 100%;
     width: 100%;
     -webkit-transition: 0.2s ease;
@@ -497,4 +499,16 @@ body, button, select {
 
 .bd-controls>.bd-addon-button:last-of-type {
     border-radius: 0px 12px 12px 0px;
+}
+
+.message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z, .mouse-mode.full-motion .mentioned-xhSam7:hover {
+    background-color: rgba(var(--ugreen), 0.1);
+}
+
+.mentioned-xhSam7 {
+    background-color: rgba(var(--ugreen), 0.05);
+}
+
+.mentioned-xhSam7:before {
+    background-color: rgb(var(--ugreen));
 }
