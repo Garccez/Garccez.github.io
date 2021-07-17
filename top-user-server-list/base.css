@@ -13,10 +13,6 @@
 }
 
 /* Original Name-Panel by LeePrky, Modded Name-Panel by Garcez|Belotto */
-.clearStatusIcon-3-MDNF,.scrollerBase-289Jih > [id*="status-picker-"] + .separator-2I32lJ,.statusItem-33LqPf > .status-1fhblQ,.statusItem-33LqPf > .description-2L932D,.statusItem-33LqPf > .separator-2I32lJ,.statusItem-33LqPf > .customText-tY5LJn,.statusItem-33LqPf > .clearStatusIcon-3-MDNF,.tutorialContainer-SGrQ1h + div {
-    display: none
-}
-
 .panels-j1Uci_ > .container-3baos1 > .avatarWrapper-2yR4wp,.usernameContainer-1fp4nu,.hoverRoll-YK53gQ {
     position: fixed;
     z-index: 5;
@@ -78,23 +74,6 @@
     border-radius: 30px;
     transform: scale(1.1);
     margin-left: 17px
-}
-#status-picker {
-    width: 44.5px;
-    margin-left: 7px
-}
-#status-picker::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background-color: inherit;
-    transform: rotate(45deg);
-    padding-top: 15px;
-    padding-left: 20px;
-    margin-left: 13px
-}
-.statusItem-33LqPf > .icon-1IxfJ2 {
-    margin-left: 1px
 }
 .userInfoSectionHeader-CBvMDh,.note-QfFU8y {
     display: none
