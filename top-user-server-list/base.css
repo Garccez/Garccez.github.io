@@ -7,6 +7,9 @@
   --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
   
   --separator-visibility: hidden;
+    
+  --disw-1: 26px;
+  --disw-2: 19px;
 }
 
 /* Original Name-Panel by LeePrky, Modded Name-Panel by Garcez|Belotto */
@@ -193,4 +196,15 @@
 .upperBadge-2XnnGB {
   top: -1px;
   left: 25px;
+}
+
+.container-3baos1 .flex-1xMQg5 {
+    left: 138px;
+    background-color: rgb(13, 13, 14);
+    border-radius: 22px;
+    top: var(--disw-1);
+}
+
+.panels-j1Uci_ > .container-3baos1 > .avatarWrapper-2yR4wp, .usernameContainer-1fp4nu, .hoverRoll-YK53gQ {
+    top: var(--disw-2);
 }
