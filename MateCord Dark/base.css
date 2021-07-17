@@ -23,8 +23,8 @@
     --linkcolor: 93, 128, 37;
 
     /* Theme Base */
-    --logo-image: url('https://caffejappa.github.io/MateCord%20Dark/assets/matecord.png')
-    --version: 'MateCord Dark 1.0.5';
+    --logo-image: url('https://caffejappa.github.io/MateCord%20Dark/assets/matecord.png');
+    --version: 'MateCord Dark 1.0.6';
     --background-primary: rgb(10, 10, 10);
     --background-secondary: rgb(0, 0, 0); 
     --background-floating: rgb(9, 10, 10);
