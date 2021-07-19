@@ -527,3 +527,21 @@ body, button, select {
 .theme-dark .keyboardShortcutsModal-3piNz7 {
     background-color: var(--background-secondary);
 }
+
+.nameTag-3uD-yy {
+    position: fixed;
+    top: var(--nt, 32px);
+    left: var(--nl, 55px);
+}
+.nameTag-3uD-yy.canCopy-2VBT7N {
+    cursor: pointer;
+}
+.subtext-3CDbHg {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 13px;
+}
+.size12-3cLvbJ {
+    font-size: 12px;
+}
