@@ -9,6 +9,8 @@
     /* Configs */
     --disw-1: 26px;
     --disw-2: 23px;
+    --nt: 46px;
+    --nl: 55px;
 
     /* Font */
     --font-display: var(--general-font, 'Ubuntu');
@@ -24,7 +26,7 @@
 
     /* Theme Base */
     --logo-image: url('https://caffejappa.github.io/MateCord%20Dark/assets/matecord.png');
-    --version: 'MateCord Dark 1.0.6';
+    --version: 'MateCord Dark 1.0.8';
     --background-primary: rgb(10, 10, 10);
     --background-secondary: rgb(0, 0, 0); 
     --background-floating: rgb(9, 10, 10);
