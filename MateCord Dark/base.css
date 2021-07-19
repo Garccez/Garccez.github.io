@@ -530,7 +530,7 @@ body, button, select {
 
 .nameTag-3uD-yy {
     position: fixed;
-    top: var(--nt, 32px);
+    top: var(--nt, 46px);
     left: var(--nl, 55px);
 }
 .nameTag-3uD-yy.canCopy-2VBT7N {
