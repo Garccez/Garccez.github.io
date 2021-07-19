@@ -547,3 +547,7 @@ body, button, select {
 .size12-3cLvbJ {
     font-size: 12px;
 }
+
+.bd-addon-list .bd-addon-header {
+    background-color: var(--background-tertiary);
+}
