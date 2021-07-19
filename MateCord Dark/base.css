@@ -432,8 +432,12 @@ body, button, select {
     background-color: var(--background-secondary-alt);
 }
 
-.root-1gCeng, .uploadModal-2ifh8j {
+.theme-dark .footer-3mqk7D {
     background-color: var(--background-secondary);
+}
+
+.theme-dark .root-1gCeng, .uploadModal-2ifh8j {
+    background-color: var(--background-floating);
 }
 
 .perksModal-fSYqOq {
