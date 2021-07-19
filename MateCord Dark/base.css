@@ -548,3 +548,13 @@ body, button, select {
 .bd-addon-list .bd-addon-header {
     background-color: var(--background-tertiary);
 }
+
+.bd-addon-list .bd-addon-card {
+    border-radius: 12px;
+}
+.bd-button {
+    border-radius: 12px;
+}
+.searchBar-3dMhjb {
+    border-radius: 10px;
+}
