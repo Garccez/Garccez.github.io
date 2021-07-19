@@ -184,3 +184,11 @@
 .panels-j1Uci_ > .container-3baos1 > .avatarWrapper-2yR4wp, .usernameContainer-1fp4nu, .hoverRoll-YK53gQ {
     top: var(--disw-2);
 }
+
+.container-3baos1 {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 230px;
+    padding: 0;
+}
