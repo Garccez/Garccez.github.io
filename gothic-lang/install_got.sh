@@ -190,7 +190,7 @@ cp base.xml /usr/share/X11/xkb/rules/base.xml
 echo -e "${BLUE}[FILE]${NC} Moving base.lst..."
 cp base.lst /usr/share/X11/xkb/rules/base.lst
 echo -e "${BLUE}[FILE]${NC} Moving simple.xml..."
-cp simple.xml /usr/share/X11/xkb/rules/simple.xml
+cp simple.xml /usr/share/ibus/component/simple.xml
 echo -e "${BLUE}[FILE]${NC} All files have been succesfully moved."
 read -p "Do you want to delete files (this doesn't includes backup)? (Y/n) " -n 2 -r
 if [[ $REPLY =~ ^[Yy]$ ]]; then
