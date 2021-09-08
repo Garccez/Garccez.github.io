@@ -28,19 +28,19 @@ xkb_symbols "Gothic"
 		key <AC08> { [ U1033A,         U1033A ] }; // K
 		key <AC09> { [ U1033B,         U1033B ] }; // L
         key <AC10> { [ semicolon,	   colon  ] };
-        key <AC11> { [ U0302,	       U0302  ] };
+        key <AC11> { [ U0301,	       U0302  ] };
 
-		key <AD01> { [ U10335,         U10335     ] }; // Q
-		key <AD02> { [ U10345,         U10345     ] }; // W
-		key <AD03> { [ U10334,         U10334     ] }; // E
-		key <AD04> { [ U10342,         U10342     ] }; // R
-		key <AD05> { [ U10344,         U10338     ] }; // tT
-		key <AD06> { [ U1034A,         U1034A     ] }; // y
-		key <AD07> { [ U1033F,         U1033F     ] }; // U
-		key <AD08> { [ U10339,         U10339     ] }; // I
-		key <AD09> { [ U10349,         U10349     ] }; // O
-		key <AD10> { [ U10340,	       U10340     ] }; // P
-		key <AD11> { [ bracketleft,    braceleft  ] }; 
+		key <AD01> { [ U10335,             U10335 ] }; // Q
+		key <AD02> { [ U10345,             U10345 ] }; // W
+		key <AD03> { [ U10334,             U10334 ] }; // E
+		key <AD04> { [ U10342,             U10342 ] }; // R
+		key <AD05> { [ U10344,             U10338 ] }; // tT
+		key <AD06> { [ U1034A,              U0304 ] }; // y
+		key <AD07> { [ U1033F,             U1033F ] }; // U
+		key <AD08> { [ U10339,             U10339 ] }; // I
+		key <AD09> { [ U10349,             U10349 ] }; // O
+		key <AD10> { [ U10340,	           U10340 ] }; // P
+		key <AD11> { [ bracketleft,     braceleft ] }; 
 		key <AD12> { [ bracketright,   braceright ] }; 
 
         key <TLDE> { [ U0027,       U0022 ] };
