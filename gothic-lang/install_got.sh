@@ -13,6 +13,9 @@ LCY='\033[0;96m' # Light Cyan
 LGR='\033[0;92m' # Light Green
 NC='\033[0m' # No Color
 
+# DISTRO=$(lsb_release -i | cut -f 2-)
+# echo -e "${DISTRO}"
+
 # Initial checks
 
 if [ "$EUID" -ne 0 ]
@@ -23,6 +26,18 @@ fi
 # Check if user has package wget
 if ! command -v wget &> /dev/null
 then
+	if [ "$DISTRO" == "Arch" ]
+	then
+		echo -e "${RED}[ERROR]${NC} wget could not be found. Please install it."
+		sudo pacman -S wget
+		exit
+	fi
+	if [ "$DISTRO" == "Ubuntu" ]
+	then
+    	echo -e "${RED}[ERROR]${NC} wget could not be found. Please install it."
+    	sudo apt install wget
+    	exit
+    fi
     echo -e "${RED}[ERROR]${NC} wget could not be found. Please install it."
     sudo apt install wget
     exit
@@ -31,6 +46,18 @@ fi
 # Check if user has ibus
 if ! command -v ibus &> /dev/null
 then
+	if [ "$DISTRO" == "Arch" ]
+	then
+		echo -e "${RED}[ERROR]${NC} ibus could not be found. Please install it."
+		sudo pacman -S ibus ibus-rime
+		exit
+	fi
+	if [ "$DISTRO" == "Ubuntu" ]
+	then
+    	echo -e "${RED}[ERROR]${NC} ibus could not be found. Please install it."
+    	sudo apt install ibus ibus-rime
+    	exit
+    fi
     echo -e "${RED}[ERROR]${NC} ibus could not be found. Please install it."
     sudo apt install ibus ibus-rime
     exit
@@ -108,7 +135,7 @@ else
      cp /usr/share/ibus/component/simple.xml simple.xml
 fi
 echo -e "${LCY}[BACKUP]${NC} All files copied. Returning..."
-echo -e "${RED}[WARNING]${NC} Note that this backups YOUR files, even if they're modified."
+echo -e "${RED}[WARNING]${NC} Note that this backs up YOUR files, even if they're modified."
 
 cd ..
 echo -e "${LGR}[START]${NC} Let's start downloading!"
@@ -118,8 +145,8 @@ echo -e "${BLUE}[FILE]${NC} Checking if 'got' already exists..."
 if [ -f "$FILE_GOT" ]; then
      echo -e "${BLUE}[FILE]${NC} 'got' exists. Proceeding..."
 else
-     echo -e "${BLUE}[FILE]${NC} 'got' doesn't exists. Downloading..."
-     wget http://caffejappa.github.io/gothic-lang/got
+     echo -e "${BLUE}[FILE]${NC} 'got' doesn't exist. Downloading..."
+     wget http://garccez.github.io/gothic-lang/got
      echo -e "${BLUE}[FILE]${NC} 'got' succesfully downloaded. Proceeding..."
 fi
 FILE_EVDEV=$SCRIPTPATH/files/evdev.xml
@@ -127,8 +154,8 @@ echo -e "${BLUE}[FILE]${NC} Checking if 'evdev.xml' already exists..."
 if [ -f "$FILE_EVDEV" ]; then
      echo -e "${BLUE}[FILE]${NC} 'evdev.xml' exists. Proceeding..."
 else
-     echo -e "${BLUE}[FILE]${NC} 'evdev.xml' doesn't exists. Downloading..."
-     wget http://caffejappa.github.io/gothic-lang/evdev.xml
+     echo -e "${BLUE}[FILE]${NC} 'evdev.xml' doesn't exist. Downloading..."
+     wget http://garccez.github.io/gothic-lang/evdev.xml
      echo -e "${BLUE}[FILE]${NC} 'evdev.xml' succesfully downloaded. Proceeding..."
 fi
 FILE_EVDEV2=$SCRIPTPATH/files/evdev.lst
@@ -136,8 +163,8 @@ echo -e "${BLUE}[FILE]${NC} Checking if 'evdev.lst' already exists..."
 if [ -f "$FILE_EVDEV2" ]; then
      echo -e "${BLUE}[FILE]${NC} 'evdev.lst' exists. Proceeding..."
 else
-     echo -e "${BLUE}[FILE]${NC} 'evdev.lst' doesn't exists. Downloading..."
-     wget http://caffejappa.github.io/gothic-lang/evdev.lst
+     echo -e "${BLUE}[FILE]${NC} 'evdev.lst' doesn't exist. Downloading..."
+     wget http://garccez.github.io/gothic-lang/evdev.lst
      echo -e "${BLUE}[FILE]${NC} 'evdev.lst' succesfully downloaded. Proceeding..."
 fi
 FILE_XORG=$SCRIPTPATH/files/xorg.lst
@@ -145,8 +172,8 @@ echo -e "${BLUE}[FILE]${NC} Checking if 'xorg.lst' already exists..."
 if [ -f "$FILE_XORG" ]; then
      echo -e "${BLUE}[FILE]${NC} 'xorg.lst' exists. Proceeding..."
 else
-     echo -e "${BLUE}[FILE]${NC} 'xorg.lst' doesn't exists. Downloading..."
-     wget http://caffejappa.github.io/gothic-lang/xorg.lst
+     echo -e "${BLUE}[FILE]${NC} 'xorg.lst' doesn't exist. Downloading..."
+     wget http://garccez.github.io/gothic-lang/xorg.lst
      echo -e "${BLUE}[FILE]${NC} 'xorg.lst' succesfully downloaded. Proceeding..."
 fi
 FILE_BASE=$SCRIPTPATH/files/base.xml
@@ -154,8 +181,8 @@ echo -e "${BLUE}[FILE]${NC} Checking if 'base.xml' already exists..."
 if [ -f "$FILE_BASE" ]; then
      echo -e "${BLUE}[FILE]${NC} 'base.xml' exists. Proceeding..."
 else
-     echo -e "${BLUE}[FILE]${NC} 'base.xml' doesn't exists. Downloading..."
-     wget http://caffejappa.github.io/gothic-lang/base.xml
+     echo -e "${BLUE}[FILE]${NC} 'base.xml' doesn't exist. Downloading..."
+     wget http://garccez.github.io/gothic-lang/base.xml
      echo -e "${BLUE}[FILE]${NC} 'base.xml' succesfully downloaded. Proceeding..."
 fi
 FILE_BASE2=$SCRIPTPATH/files/base.lst
@@ -163,8 +190,8 @@ echo -e "${BLUE}[FILE]${NC} Checking if 'base.lst' already exists..."
 if [ -f "$FILE_BASE2" ]; then
      echo -e "${BLUE}[FILE]${NC} 'base.lst' exists. Proceeding..."
 else
-     echo -e "${BLUE}[FILE]${NC} 'base.lst' doesn't exists. Downloading..."
-     wget http://caffejappa.github.io/gothic-lang/base.lst
+     echo -e "${BLUE}[FILE]${NC} 'base.lst' doesn't exist. Downloading..."
+     wget http://garccez.github.io/gothic-lang/base.lst
      echo -e "${BLUE}[FILE]${NC} 'base.lst' succesfully downloaded. Proceeding..."
 fi
 FILE_SIMPLE=$SCRIPTPATH/files/simple.xml
@@ -172,8 +199,8 @@ echo -e "${BLUE}[FILE]${NC} Checking if 'simple.xml' already exists..."
 if [ -f "$FILE_SIMPLE" ]; then
      echo -e "${BLUE}[FILE]${NC} 'simple.xml' exists. Proceeding..."
 else
-     echo -e "${BLUE}[FILE]${NC} 'simple.xml' doesn't exists. Downloading..."
-     wget http://caffejappa.github.io/gothic-lang/simple.xml
+     echo -e "${BLUE}[FILE]${NC} 'simple.xml' doesn't exist. Downloading..."
+     wget http://garccez.github.io/gothic-lang/simple.xml
      echo -e "${BLUE}[FILE]${NC} 'simple.xml' succesfully downloaded. Proceeding..."
 fi
 echo -e "${BLUE}[FILE]${NC} All files downloaded. Let's move them to their right place."
@@ -192,7 +219,7 @@ cp base.lst /usr/share/X11/xkb/rules/base.lst
 echo -e "${BLUE}[FILE]${NC} Moving simple.xml..."
 cp simple.xml /usr/share/ibus/component/simple.xml
 echo -e "${BLUE}[FILE]${NC} All files have been succesfully moved."
-read -p "Do you want to delete files (this doesn't includes backup)? (Y/n) " -n 2 -r
+read -p "Do you want to delete the files (this doesn't includes backup)? (Y/n) " -n 2 -r
 if [[ $REPLY =~ ^[Yy]$ ]]; then
      echo -e "${RED}[DELETE]${NC} Deleting all keyboard files..."
      rm -r got evdev.xml evdev.lst xorg.lst base.xml base.lst simple.xml
@@ -201,6 +228,6 @@ fi
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
      echo -e "${BLUE}[CONFIRMATION]${NC} Sure!"
 fi
-echo -e "${LGR}[FINISH]${NC} Now everything must work. You just need to add Gothic to your input methods on you Distro settings and log off/log in."
+echo -e "${LGR}[FINISH]${NC} Now everything should work. You just need to add Gothic to your input methods on you Distro settings and log off/log in."
 exit
 
